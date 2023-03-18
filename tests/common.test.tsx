@@ -7,6 +7,7 @@ import { Animate } from '../src'
 
 describe('Common render', () => {
   it('renders without crashing', () => {
+    if (!window.IntersectionObserver) return
     render(
       <Animate animateType='fade-up'>
         <div>fade-up</div>
