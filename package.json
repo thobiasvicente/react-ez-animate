@@ -1,60 +1,36 @@
 {
   "name": "react-ez-animate",
-  "version": "1.0.1",
-  "description": "Easy to use animation library for React",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "version": "1.0.0",
+  "description": "Demo page of React Ez Animate",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thobiasvicente/react-ez-animate.git"
   },
-  "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "test": "jest --config jestconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thobiasvicente/react-ez-animate/issues"
   },
-  "peerDependencies": {
-    "react": ">=18"
-  },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "keywords": [
-    "react",
-    "typescript",
-    "awesome-project"
-  ],
-  "author": "Thobias Vicente",
-  "license": "MIT",
-  "devDependencies": {
-    "@testing-library/react": "^13.3.0",
-    "@types/jest": "^28.1.1",
-    "@types/react": "^18.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "eslint": "^8.17.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "jest": "^28.1.1",
-    "jest-canvas-mock": "^2.4.0",
-    "jest-environment-jsdom": "^28.1.1",
-    "prettier": "^2.6.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "ts-jest": "^28.0.4",
-    "typescript": "^4.7.3"
-  },
+  "homepage": "https://github.com/thobiasvicente/react-ez-animate#readme",
   "dependencies": {
-    "framer-motion": "^10.6.0"
+    "react-ez-animate": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ez-animate": "^1.0.1",
+    "typescript": "^5.0.2"
   }
 }

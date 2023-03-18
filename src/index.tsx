@@ -1,53 +1,63 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { Animate } from 'react-ez-animate'
-import './style.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Animate } from "react-ez-animate";
+import "./style.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 interface ICard {
-  title: string
-  animateType: 'fade-left' | 'fade-right' | 'fade-up' | 'fade-down' | 'zoom-in' | 'zoom-out' | 'flip-up' | 'flip-down'
+  title: string;
+  animateType:
+    | "fade-left"
+    | "fade-right"
+    | "fade-up"
+    | "fade-down"
+    | "zoom-in"
+    | "zoom-out"
+    | "flip-up"
+    | "flip-down";
 }
-type ICards = Array<ICard>
+type ICards = Array<ICard>;
 
 const cards: ICards = [
   {
-    title: 'Fade-up',
-    animateType: 'fade-up',
+    title: "Fade-up",
+    animateType: "fade-up",
   },
   {
-    title: 'Fade-down',
-    animateType: 'fade-down',
+    title: "Fade-down",
+    animateType: "fade-down",
   },
   {
-    title: 'Fade-left',
-    animateType: 'fade-left',
+    title: "Fade-left",
+    animateType: "fade-left",
   },
   {
-    title: 'Fade-right',
-    animateType: 'fade-right',
+    title: "Fade-right",
+    animateType: "fade-right",
   },
   {
-    title: 'Zoom-in',
-    animateType: 'zoom-in',
+    title: "Zoom-in",
+    animateType: "zoom-in",
   },
   {
-    title: 'Zoom-out',
-    animateType: 'zoom-out',
+    title: "Zoom-out",
+    animateType: "zoom-out",
   },
   {
-    title: 'Flip-up',
-    animateType: 'flip-up',
+    title: "Flip-up",
+    animateType: "flip-up",
   },
   {
-    title: 'Flip-down',
-    animateType: 'flip-down',
+    title: "Flip-down",
+    animateType: "flip-down",
   },
-]
+];
 root.render(
   <React.StrictMode>
     <h1
-      className='bg'
+      className="bg"
       style={{
         textAlign: `center`,
         height: `100%`,
@@ -84,5 +94,5 @@ root.render(
         </Animate>
       </div>
     ))}
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
