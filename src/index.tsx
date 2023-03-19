@@ -3,11 +3,9 @@ import ReactDOM from "react-dom/client";
 import { Animate } from "react-ez-animate";
 import { Prism } from "@mantine/prism";
 import "./style.css";
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
 interface ICard {
   title: string;
   animateType:
