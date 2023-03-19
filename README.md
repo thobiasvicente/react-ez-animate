@@ -37,7 +37,7 @@ function MyComponent() {
 ```
 React ez animate supports a variety of animation options, including fade-left, fade-right, fade-up, fade-down, zoom-in, zoom-out, flip-up, flip-dow. You can also customize the animation duration and delay.
 
-[**Live Demo**](https://thobiasvicente.github.io/my-react-typescript-package/)
+[**Live Demo**](https://thobiasvicente.github.io/react-ez-animate)
 
 [npm-url]: https://www.npmjs.com/package/react-ez-animate
 [npm-image]: https://img.shields.io/npm/v/react-ez-animate
