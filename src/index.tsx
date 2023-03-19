@@ -7,6 +7,7 @@ import "./style.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 interface ICard {
   title: string;
   animateType:
