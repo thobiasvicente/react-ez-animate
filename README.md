@@ -25,12 +25,11 @@ To use React ez animate in your React project, simply import the Animate compone
 Here's an example of how to use React ez animate to create a simple fade-in animation:
 
 ```jsx
-import React from 'react';
-import Animate from 'react-ez-animate';
+import { Animate } from 'react-ez-animate';
 
 function MyComponent() {
   return (
-    <Animate animateType="fade-in">
+    <Animate animateType="fade-up">
       <div>Hello, world!</div>
     </Animate>
   );

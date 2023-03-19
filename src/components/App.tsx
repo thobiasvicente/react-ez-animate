@@ -32,7 +32,7 @@ const Animate: React.FC<AnimateProps> = (props) => {
     endValue = 200
   }
 
-  const CustomComponent = motion(el, { forwardMotionProps: true })
+  const CustomComponent = motion('motion.' + el, { forwardMotionProps: true })
   let variant
 
   switch (animateType) {
