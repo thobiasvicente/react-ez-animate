@@ -2,8 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Animate } from 'react-ez-animate'
 import { Prism } from '@mantine/prism';
-
-
 import './style.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
@@ -12,7 +10,6 @@ interface ICard {
   animateType: 'fade-left' | 'fade-right' | 'fade-up' | 'fade-down' | 'zoom-in' | 'zoom-out' | 'flip-up' | 'flip-down'
 }
 type ICards = Array<ICard>
-
 const cards: ICards = [
   {
     title: 'Fade-up',
