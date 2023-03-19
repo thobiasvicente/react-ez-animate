@@ -7,6 +7,13 @@
 
 React Ez animate is a lightweight and easy-to-use animation library for React. It provides a simple way to animate your React components with a variety of animation options.
 
+This library uses [Framer Motion](https://www.framer.com/motion/) under the hood, so basically i created simple way to use it.
+
+## Demo
+
+[**Live Demo**](https://thobiasvicente.github.io/react-ez-animate)
+
+
 Installation
 You can install React ez animate using npm:
 
@@ -35,9 +42,37 @@ function MyComponent() {
   );
 }
 ```
-React ez animate supports a variety of animation options, including fade-left, fade-right, fade-up, fade-down, zoom-in, zoom-out, flip-up, flip-dow. You can also customize the animation duration and delay.
 
-[**Live Demo**](https://thobiasvicente.github.io/react-ez-animate)
+## Props
+
+- animateType (string) - The type of animation to use.
+- animateDuration (number) - The duration of the animation in seconds.
+- initialValue (number) - The initial value of the animation.
+- endValue (number) - The end value of the animation.
+- el (string) - The element to animate, default is div. Because its use framer motion under the hood, you can use any element that framer motion supports. like motion.div, motion.span, so o just pass the element name without motion. like div, span, p, etc.
+
+Here's an example using the el prop:
+
+```jsx
+import { Animate } from 'react-ez-animate';
+
+function MyComponent() {
+  return (
+    <Animate animateType="fade-left" el="p">Hello,world!</Animate>
+  );
+}
+```
+
+## Animation Types
+
+- fade-left (default)
+- fade-right
+- fade-up
+- fade-down
+- zoom-in
+- zoom-out
+- flip-up
+- flip-down
 
 [npm-url]: https://www.npmjs.com/package/react-ez-animate
 [npm-image]: https://img.shields.io/npm/v/react-ez-animate
